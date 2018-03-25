@@ -19,6 +19,26 @@ Install TypeScript
 npm install -g typescript
 </li>
 <li>
+Install node modules
+<br />
+npm install
+</li>
+<li>
+Install jQuery
+<br />
+npm install jquery --save
+</li>
+<li>
+Install jQuery types
+<br />
+npm install --save-dev @types/jquery
+</li>
+<li>
+Intall CSS
+<br />
+npm install systemjs-plugin-css
+</li>
+<li>
 Compile file
 <br />
 tsc app.ts
@@ -27,21 +47,5 @@ tsc app.ts
 Run lite server
 <br />
 npm run dev
-</li>
-</ol>
-
-## For development has also been used
-<ol>
-<li>
-npm install
-</li>
-<li>
-npm install jquery --save
-</li>
-<li>
-npm install --save-dev @types/jquery
-</li>
-<li>
-npm install systemjs-plugin-css
 </li>
 </ol>
