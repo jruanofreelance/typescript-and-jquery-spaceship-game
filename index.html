@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Ship Destroy</title>
+  </head>
+  <body>
+
+    <div class="preloader"></div>
+    <div class="gameContainer">
+    	<div class="enemyShipsContainer">
+    		<div id="enemyShip1" class="enemyShips"></div>
+    		<div id="enemyShip2" class="enemyShips"></div>
+    		<div id="enemyShip3" class="enemyShips"></div>
+    		<div id="enemyShip4" class="enemyShips"></div>
+    		<div id="enemyShip5" class="enemyShips"></div>
+    		<div id="enemyShip6" class="enemyShips"></div>
+    	</div>
+    	<div id="playerShip" class=""></div>
+    	<div class="lifesContainer"></div>
+    	<div id="score"></div>
+    </div>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+      // set our baseURL reference path
+      SystemJS.config({
+        baseURL: '/',
+        map: {
+          "jquery":"node_modules/jquery/dist/jquery.min.js",
+          css: 'node_modules/systemjs-plugin-css/css.js'
+        },
+        defaultJSExtensions:true
+
+      });
+
+      // loads /js/main.js
+      SystemJS.import('app.js');
+    </script>
+
+  </body>
+</html>
